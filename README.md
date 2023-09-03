@@ -2,7 +2,7 @@
 - Just in case, please ensure that your current terminal path is in the same folder as the <code>main.py</code> for each challenge in order for the reader and writer objects to properly recognize the paths.
 # PyBank Challenge
 - Please see <code>analysis.txt</code> under the analysis folder for the output from the <code>main.py</code>.
-- <b>Approach methods to the problem:</b>
+- <b>Approach method to the problem:</b>
     1) Create a master list using zip for analysis for below lists:
         - Extract months and profits/losses into their own list.
         - Create a new list showing the differences between the current and previous month of profits/losses. First month is defaulted to 0.
@@ -15,7 +15,7 @@
 
 # PyPoll Challenge
 - Please see <code>analysis.txt</code> under the analysis folder for the output from the <code>main.py</code>.
-- <b>Approach methods to the problem:</b>
+- <b>Approach method to the problem:</b>
     1) Create a master list using zip for analysis for below list:
         - Extract ballot_ids, counties, and candidates into their own list.
     2) Create a dictionary for a complete list of unique candidates and counties they were in with the ballot counts.
