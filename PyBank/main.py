@@ -42,7 +42,7 @@ with open(budget_csv, mode="r", encoding="UTF-8") as csvfile:
     csvreader = csv.reader(csvfile, delimiter=',')
 
     # Skip the first row header since we don't need
-    next(csvreader)
+    header = next(csvreader)
 
     # Loop through the recordset and assign values (cast int for profits/losses)
     for row in csvreader:
@@ -60,10 +60,10 @@ total_number_months = len(dates)
 total_amount = sum(i for i in profits_losses)
 greatest_increase = get_greatest_value(new_zip)
 greatest_decrease = get_greatest_value(new_zip,False)
-average_change = round(sum(c for d,p,c in new_zip) / (total_number_months - 1),2)
+average_change = round(sum(difference for _,_,difference in new_zip) / (total_number_months - 1),2)
 
 # Build message output variable for printing and writing
-msg_output = "-" * 50 + "\nFinancial Analysis\n" + "-" * 50
+msg_output = "Financial Analysis\n" + "-" * 50
 msg_output += "\nTotal Months: " + str(total_number_months) + "\nTotal: " + str(total_amount)
 msg_output += "\nAverage Change: " + str(average_change) + "\nGreatest Increase in Profits: " + greatest_increase
 msg_output += "\nGreatest Decrease in Profits: " + greatest_decrease
