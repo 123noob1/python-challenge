@@ -89,8 +89,8 @@ else:
 # Build message for output to terminal and text file
 msg_output = "Election Results\n" + ("-" * 50)
 msg_output += "\nTotal Votes: " + str(total_number) + "\n" + ("-" * 50)
-msg_output += "\nCharles Casper Stockham: " + str(stockham_percent) + "% (" + str(stockham_total) + ")\n"
-msg_output += "\nDiana DeGette: " + str(degette_percent) + "% (" + str(degette_total) + ")\n"
+msg_output += "\nCharles Casper Stockham: " + str(stockham_percent) + "% (" + str(stockham_total) + ")"
+msg_output += "\nDiana DeGette: " + str(degette_percent) + "% (" + str(degette_total) + ")"
 msg_output += "\nRaymon Anthony Doane: " + str(doane_percent) + "% (" + str(doane_total) + ")\n" + ("-" * 50)
 msg_output += "\nWinner: " + winner + "\n" + ("-" * 50)
 
