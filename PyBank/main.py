@@ -64,8 +64,8 @@ average_change = round(sum(difference for _,_,difference in new_zip) / (total_nu
 
 # Build message output variable for printing and writing
 msg_output = "Financial Analysis\n" + "-" * 50
-msg_output += "\nTotal Months: " + str(total_number_months) + "\nTotal: " + str(total_amount)
-msg_output += "\nAverage Change: " + str(average_change) + "\nGreatest Increase in Profits: " + greatest_increase
+msg_output += "\nTotal Months: " + str(total_number_months) + "\nTotal: $" + str(total_amount)
+msg_output += "\nAverage Change: $" + str(average_change) + "\nGreatest Increase in Profits: " + greatest_increase
 msg_output += "\nGreatest Decrease in Profits: " + greatest_decrease
 
 # Print the output
