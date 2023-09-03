@@ -1,3 +1,5 @@
+# Note to Graders
+- Just in case, please ensure that your current terminal path is in the same folder as the <code>main.py</code> for each challenge in order for the reader and writer objects to properly recognize the paths.
 # PyBank Challenge
 - Please see <code>analysis.txt</code> under the analysis folder for the output from the <code>main.py</code>.
 - <b>Approach methods to the problem:</b>
