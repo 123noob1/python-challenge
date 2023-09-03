@@ -9,7 +9,7 @@
 # - Total number of votes each candidate won
 #   - total_votes_pcandidate = count(unique_candidate)
 # - Winner of the election based on popular vote
-#   - winner = max(unique_candidates)
+#   - winner = highest percent votes yield by candidate
 #-----------------------------------------------------------------------------------------------------------------------
 
 # Import modules needed to open, read, and write the dataset file
@@ -55,8 +55,8 @@ with open(election_csv, mode="r", encoding="UTF-8") as csvfile:
 election_list = list(zip(ballot_ids,counties,candidates))
 election_stat = {}
 
-# Get unique lists of candidates and counties then populate a dictionary containing unique candidates as key with subdictionary for counties with total count of vote for each county
-# that each candidate was in
+# Get unique lists of candidates and counties then populate a dictionary containing unique candidates as key with subdictionary 
+# for counties with total count of vote for each county that each candidate was in
 unique_candidates = set(candidates)
 unique_counties = set(counties)
 
